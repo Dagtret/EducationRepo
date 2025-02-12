@@ -1,14 +1,14 @@
 LIST_USERS_DATA_SCHEMA = {
     "type" : "object",
     "properties" : {
-        "id": 7,
-        "email": "michael.lawson@reqres.in",
-        "first_name": "Michael",
-            "last_name": "Lawson",
-            "avatar":
-    }
+        "id": {"type" : "integer"},
+        "email": {"type" : "string"},
+        "first_name": {"type" : "string"},
+        "last_name": {"type" : "string"},
+        "avatar": {"type" : "string"},
+    },
+    "required" : ["id", "email", "first_name", "last_name", "avatar"]
 }
-
 
 LIST_DATA_SCHEMA = {
     "type" : "object",
