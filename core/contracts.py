@@ -42,3 +42,28 @@ UPDATE_USER_SCHEMA = {
     },
     "required": ["updatedAt"]
 }
+
+REGISTER_USER_SCHEMA_SUCCESSFUL = {
+    "type": "object",
+    "properties": {
+        "id": {"type": "integer"},
+        "token": {"type": "string"}
+    },
+    "required": ["id", "token"]
+}
+
+LOGIN_AND_REGISTER_USER_SCHEMA_UNSUCCESSFUL = {
+    "type": "object",
+    "properties": {
+        "error": {"type": "string"}
+    },
+    "required": ['error']
+}
+
+LOGIN_USER_SCHEMA_SUCCESSFUL = {
+    "type": "object",
+    "properties": {
+        "token": {"type": "string"}
+    },
+    "required": ["token"]
+}
