@@ -32,3 +32,13 @@ CREATE_USER_SCHEMA = {
     },
     "required" : ["id", "createdAt"]
 }
+
+UPDATE_USER_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "name": {"type": "string"},
+        "job": {"type": "string"},
+        "updatedAt": {"type": "string"}
+    },
+    "required": ["updatedAt"]
+}
